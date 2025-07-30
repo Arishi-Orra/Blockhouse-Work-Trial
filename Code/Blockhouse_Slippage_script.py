@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
 
-df = pd.read_csv('CRWV//CRWV_2025-04-03 00_00_00+00_00.csv')
+df = pd.read_csv(f_name)
 
 df['ts_event'] = pd.to_datetime(df['ts_event'])
 df = df.sort_values('ts_event')
